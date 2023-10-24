@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+.menu-categories {
+  text-align: center;
+}
+
+.filter-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.filter-button:hover {
+  background-color: #e69c00;
+  border: none;
+}
+
+/* CARDS */
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Atur latar belakang elemen menu */
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #ffffff;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.25s, color 0.25s;
+  margin: 10px;
+}
+
+.card_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  transform: translateY(50%);
+  transition: transform 0.70s;
+}
+
+.card:hover .card_content {
+  transform: translateY(0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.temporary_text img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card_title {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card_subtitle {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover .card_title,
+.card:hover .card_subtitle {
+  color: #ffffff;
+}
+
+.card_description,
+.add-to-cart-btn {
+  display: none;
+}
+
+.card:hover .card_description,
+.card:hover .add-to-cart-btn {
+  display: block;
+}
+
+.card:hover .card_title,
+.card:hover .card_subtitle {
+  color: #ffffff;
+}
+
+/* QUANTITY & CART BUTTON */
+.add-to-cart-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  height: 45px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e69c00;
+  border: none;
+}
+
+/* Styling the container div */
+.quantity-and-button {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling the quantity input */
+.quantity-and-button input[type="number"] {
+  width: 40px; /* Sesuaikan ukuran input quantity sesuai kebutuhan */
+  padding: 5px;
+  margin-right: 10px; /* Jarak antara input quantity dan tombol */
+}
+
+/* Styling the "Add to Cart" button */
+.quantity-input .add-to-cart-btn {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #ffbe33;
+  color: white;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+
+.quantity-input .add-to-cart-btn:hover {
+  background-color: #e69c00;
+  transition-duration: 0.3s;
+}
+
+.quantity-input {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 45px;
+}
+
+/* INI UNTUK TOMBOL NEXT PREV MENU */
+.prev-next-buttons {
+  text-align: center;
+  margin-top: 25px;
+  outline: none;
+}
+
+.prev-next-buttons button:hover {
+  background-color: #e69c00;
+  border: none;
+  outline: none;
+}
+
+.arrow-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 0 1px;
+  border-radius: 0;
+  transition: background-color 0.2s;
+}
+
+.arrow-button:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.arrow-button:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.arrow-button i {
+  margin-right: 5px;
+}
+
+.arrow-button:hover {
+  background-color: #e69c00;
+  border: none;
+}
+
